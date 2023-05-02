@@ -6,12 +6,17 @@
 
 		<title>reveal.js</title>
 
+		<script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"/>
+
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		
 	</head>
 	<body>
 		<div class="reveal">
@@ -74,7 +79,6 @@
 							search the result:
 							
 							```python
-							
 							searchResult = r.json()
 							#searchResult
 							for scene in searchResult['feed']['entry']:
@@ -93,10 +97,22 @@
 					</section>
 					<section data-markdown>
 						<textarea data-template>
-							NDVI Max - Min --> Slider!
+							NDVI
 						</textarea>
 					</section>
-										<section data-markdown>
+					<section>
+						June 2018 vs March 2023
+						  <img-comparison-slider tabindex="0" class="rendered">
+						  <img slot="first" width="50%" src="data/Ngurunit201806.png">
+						  <img slot="second" width="50%" src="data/Ngurunit202303.png">
+						  </img-comparison-slider>
+					
+							<!--<img id="2018" src="data/Ngurunit201806.png" height="200" width="auto"/>  left image -->
+							<!-- <img id="2023" src="data/Ngurunit202303.png" height="200" width="auto"/> right image -->
+							
+						 
+					</section>
+					<section data-markdown>
 						<textarea data-template>
 							Literature
 						</textarea>
@@ -150,6 +166,8 @@
 			</div>
 		</div>
 
+
+
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
@@ -165,5 +183,6 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
+		
 	</body>
 </html>
