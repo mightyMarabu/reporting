@@ -21,10 +21,10 @@
 	<style>
 		.inforange {
 			
-			background-image:url("pics/inforange.png"), url("pics/bmbf.png"), url("pics/uniks.png"), url("pics/ditsl.png"), url("pics/agt.gif");
-			background-size: 12%, 7%, 13%, 8%;
+			background-image:url("pics/inforange.png"), url("pics/bmbf.png"), url("pics/uniks.png"), url("pics/ditsl.png"), url("pics/agt.gif"), url("pics/crdd-logo.png"), url("pics/UoN.png"), url("pics/nnf.png"), url("pics/nust.png"), url("pics/compwiz-creations-logo.png");
+			background-size: 15%, 7%, 13%, 8%, 10%, 9%, 7%, 8%, 5%, 8%;
 			background-repeat: no-repeat;
-			background-position: top right, bottom left, bottom, bottom right, top left; 
+			background-position: top right, 			bottom left, 		top left 15%, 			bottom right 20%, 		top left, 			bottom left 35%, 		bottom left 20%, 			bottom, 		bottom right,		bottom right 35%; 
 			
 		}
 
@@ -123,13 +123,14 @@
 				<section>
 					<section data-markdown>
 						<textarea data-template>
-							## The Project
+							### Increasing efficiency in rangeland-based livestock value chains by co-designed digital technologies and machine learning approaches
+							Acronym: InfoRange
 						</textarea>
 					</section>
 					<section data-markdown>
 						<textarea data-template>
 							### WP 5
-							improve visual inspections of rangeland with machine vision along with machine learning techniques in order to provide following automate tasks:
+							<span style="color: red;">improve visual inspections</span>  of rangeland <span style="color: red;">with machine vision</span> along with <span style="color: red;">machine learning techniques</span> in order to provide following automate tasks:
 
 							* 5.1 Machine vision-based rangeland inspection
 							* 5.2 Remote sensing & GPS-based herd tracking algorithms	 
@@ -147,7 +148,7 @@
 						<textarea data-template >
 						### WP 5.1 Machine learning rangeland management
 						<font size="6">
-						Train algorithms to score the pastoral index based on several captured color images by herders (using smartphones) along with high- and low-quality satellite images.
+						Train algorithms to <span style="color: red;">score the pastoral index</span> based on several captured color <span style="color: red;">images by herders</span> (using smartphones) along with high- and low-quality satellite images.
 
 						
 
@@ -177,20 +178,78 @@
 						* Satellite-based Images
 						</textarea>
 					</section>
-					<section data-markdown data-background="pics/route.png" data-background-repeat="no-repeat" data-background-position="right" data-background-size="40%">
+					<section data-markdown data-background="pics/route_green.png" data-background-repeat="no-repeat" data-background-position="right 5%" data-background-size="40%">
 						<textarea data-template>
-							## WP 5.2
-							Develop real-time GPS-based tracking algorithms 
-							* To monitor and assess e.g. grazing mobility 
+							### WP 5.2
+							#### Develop real-time GPS-based tracking algorithms 
+							* To monitor and assess e.g. <span style="color: red"> grazing mobility </span> 
 							(spatio-temporal land use patterns)
-							* To monitor grazing time 
+							* To monitor <span style="color: red">grazing time</span> 
 							* To monitor duration of individual herds
 
 						</textarea>
 					</section>
+					<section data-markdown data-background="pics/p1.png" data-background-repeat="no-repeat" data-background-position="bottom right" data-background-size="20%">
+						<textarea data-template>
+							#### GPS raw data 
+							<img src="pics/gps_sample.png">
+						</textarea>
+					</section>
+					<section data-markdown _data-background="pics/gps_spy1.png" data-background-repeat="no-repeat" data-background-position="right" data-background-size="20%">
+						<textarea data-template>
+							#### GPS data visualisation
+							<img src="pics/gps_spy1.png" style="margin-right: 1%" width="48%" height="auto"><img src="pics/gps_spy2.png" style="margin-left: 1%" width="48%" height="auto">
+						</textarea>
+					</section>
+					<section data-markdown data-background="pics/sentinel1.png, pics/sentinel2.png" data-background-repeat="no-repeat" data-background-position="top 25% left 7%, top 20% right 7%" data-background-size="25%, 20%">
+						<textarea data-template>
+						#### Satellite data
+						* Sentinel 2 - MSI - 12 bands (442nm - 2202nm)
+							* Two satellites - 5 days revisit period
+						* Sentinel 1 - SAR - radar
+							* Two satellite - 6 days revisit period
+						
+						</textarea>
+					</section>
 					<section data-markdown>
 						<textarea data-template>
-							## WP 5.3
+						<font size="4">S2 - June 2018 vs March 2023 (RBG)</font>
+						  <img-comparison-slider tabindex="0" class="rendered">
+						  <img slot="first" width="65%" src="data/Ngurunit201806.png">
+						  <img slot="second" width="65%" src="data/Ngurunit202303.png">
+						  </img-comparison-slider>
+						</textarea>
+					</section>
+					<section>
+						<font size="4">S2 - June 2018 vs March 2023 (NDVI)</font>
+						  <img-comparison-slider tabindex="0" class="rendered">
+						  <img slot="first" width="65%" src="data/ndvi201806.png">
+						  <img slot="second" width="65%" src="data/ndvi2023.png">
+						  </img-comparison-slider>
+					</section>
+					<section data-markdown data-background="pics/wp532.png" data-background-repeat="no-repeat" data-background-position="bottom right" data-background-size="53%">
+						<textarea data-template>
+							### WP 5.3 
+							#### AI coupled with advanced statistical models for analytics
+							* GPS-tracking data and output of image processing for AI analytic. 
+							* Climate and environment information, 
+							* rangeland quality, 
+							* number of herds etc. 
+
+
+						</textarea>
+					</section>
+					<section data-markdown data-background="pics/wp531.png" data-background-repeat="no-repeat" data-background-position="bottom right" data-background-size="26%">
+						<textarea data-template>
+							### WP 5.3
+							#### Descriptive analytics
+							* Descriptive analytics is the process of using current and historical data to identify trends and relationships.
+							Predictive analysis 
+							* Predictive makes predictions about future outcomes using historical data 
+							Requirements
+							* Herd Number
+							* Climate data
+
 						</textarea>
 					</section>
 				</section>
