@@ -1,5 +1,7 @@
 # remote sensing
 
+# MSI
+
 ## classification
 
 ### segmentation
@@ -23,3 +25,19 @@ feature categories
 ### supervised classification
 
 ![supervised classification algorythms](pics/supervised_class.png)
+
+# SAR
+
+Radarrückstreuung wird beinflusst durch:
+* Bodenparameter
+    * geometrische Eigenschaften
+        * Oberflächenrauigkeit
+        * Topographie
+        * Objektgeometrie
+        * Objektaisrichtung
+    * dielektrische Eigenschaften (Wassergehalt)
+* Sensorparameter
+    * Wellenlänge & Frequenz
+    * Polarisation
+    * Zellgröße
+    * Sensorgeometrie (Einfallswinkel, etc)
