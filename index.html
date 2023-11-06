@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>hands on QGIS</title>
 
 		<script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
 		<link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"/>
@@ -19,7 +19,17 @@
 		
 	</head>
 	<style>
-		
+		.data {
+			
+			background-image:url("pics/inforange.png"), url("pics/uniks.png"), url("pics/agt.gif");
+			background-size: 15%, 13%, 10%;
+			background-repeat: no-repeat;
+			background-position: top right, 	top left, 		top;
+			
+		}
+		source {
+			color: red;
+		}
 	</style>
 	<body>
 		<div class="reveal">
@@ -27,12 +37,84 @@
 			<div class="slides">
 				<section data-markdown>
 					<textarea data-template>
-                        [<img src="pics/inforange.png" style="width: 13%; height: auto">](index_inforange.html)
-
-                        [<img src="pics/minutes.png" style="width: 6%; height: auto">](index_minutes.html)
+                       Hands on QGIS
                     </textarea>
 				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+						Projections
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+						Projectiontypes
+						</textarea>
+					</section>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### Data models
 
+						<img src="pics/rasterVector.jpg"  height="auto%" width="20%" >
+						<img src="pics/data_models.png"  height="auto%" width="28%" >
+						
+						<p style="color: grey; font-size: small;"> 
+							https://spatialvision.com.au/blog-raster-and-vector-data-in-gis/ <br>
+							https://gsp.humboldt.edu/olm/Lessons/GIS/08%20Rasters/RasterToVector.html
+						
+						</p>
+						
+					</textarea>
+				</section>
+				
+				<section>
+					<section data-markdown style="height:100%; background-image: url('pics/background_vector.png'); background-repeat: no-repeat;"> 
+						<textarea data-template>
+						 Points
+						
+						 Lines
+
+						### Vector data
+
+						 Polygons
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							#### Attributes
+							<img src="pics/pump_coords.png"  height="auto" width="40%" >
+							<img src="pics/pumps_geom.png"  height="auto" width="46%" >
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown >
+						<textarea data-template>
+						Raster data
+						<img src="pics/raster_background.png" alt="">
+						---
+						<img src="pics/raster_band.png" height="auto" width="48%">
+						<img src="pics/raster_value.png" height="auto" width="48%">
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+						Bands & Virtual raster
+						</textarea>
+					</section>
+					<section>
+						<img-comparison-slider tabindex="0" class="rendered">
+							<img slot="first" width="60%" src="pics/rgb_may2023.png">
+							<img slot="second" width="60%" src="pics/rgb_Oct2023.png">
+					  </img-comparison-slider>
+					  May 2023 vs October 2023
+						<img-comparison-slider tabindex="0" class="rendered">
+							  <img slot="first" width="60%" src="pics/savi_May2023.png">
+							  <img slot="second" width="60%" src="pics/savi_Oct2023.png">
+						</img-comparison-slider>
+					</section>
+				</section>
 			</div>
 		</div>
 
