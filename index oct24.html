@@ -19,12 +19,14 @@
 		
 	</head>
 	<style>
+		
 		.inforange {
 			
 			background-image:url("pics/inforange.png"), url("pics/bmbf.png"), url("pics/uni_kassel_fb11.png"), url("pics/agt.gif"), url("pics/netz_gruen.png");
 			background-size: 12%, 7%, 20%, 10%, 15% 100%;
 			background-repeat: no-repeat;
-			background-position: top right, bottom left 17%, top left 7%, bottom right, left; 
+			background-position: top right, bottom left 17%, top left 7%, bottom right, left -5%; 
+			padding-left: 5%;
 			
 		}
 
@@ -139,18 +141,45 @@
 					</section>
 
 					<section data-markdown>
-						#### Material: Study area
+						<textarea data-template>
+							#### Material: Study area
+							<img src="pics/oct24/study_area.png">
+							<figcaption style="font-size: small;">openstreetmap / sentinel2</figcaption>
+						</textarea>							
+					<!-- 					
+						![](pics/oct24/study_area.png)
+						*openstreetmap / sentinel2*
+					 -->
 					</section>
-					<section data-markdown style="background-image: url('pics/p1.png'),url('pics/qfield.png'); background-position: top right, bottom right; background-size: 15%; background-repeat: no-repeat;">
-						#### Material: Field data
-						* GPS
-							* collected by herders with Columbus p1
-						
-
-						* Ground samples
-							* collected with OpenSource Application QField
-							* more text
-						
+					 <section data-markdown 
+							style="background-image: url('pics/p1.png'); 
+									background-position: top right; 
+									background-size: 15%; 
+									background-repeat: no-repeat;">
+					<textarea data-template>
+					#### Material: Field data
+					* GPS
+						* collected by herders with Columbus p1
+					
+						<img src="pics/gps_sample.png" style="height: 15%; width: auto;">
+					
+					</textarea>
+					</section>
+					
+					<section data-markdown 
+							style="background-image: url('pics/qfield.png'), url('pics/q_sync.png'); 
+									background-position: top right, bottom right; 
+									background-size: 15%, 15%; 
+									background-repeat: no-repeat;">
+					<textarea data-template>
+					#### Material: Field data
+					
+					* Ground samples
+						* collected with OpenSource Application QField
+						<img src="pics/oct24/groundTruth.png" style="height: 30%, width: auto;">
+						* more text
+					
+					</textarea>	
 					</section>
 					<section>
 						Material: GPS data processing
