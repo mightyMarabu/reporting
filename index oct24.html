@@ -124,15 +124,30 @@
 			<div class="slides inforange">
 				<section data-markdown>
 					<textarea data-template>
-                        Title
+						On the other side the grass is always <span style="color: green;">greener</span> <br>
+						or<br>
+                        **Earth observation** <span style="color: grey; font-size: smaller;">coupled with</span> **deep learning** <span style="color: grey; font-size: smaller;">techniques to detect **useful and non useful trees** for</span> **rangeland management**
 						<br>
-						<img src="pics/inforange.png" style="width: 13%; height: auto">
+						
 
                     </textarea>
 				</section>
-				<section>
-					<h3>Introduction</h3>
-					<h4>rsearch Question</h4>
+				<section data-markdown data-separator="^\n\n\n"
+				data-separator-vertical="^\n\n"
+				data-separator-notes="^Note:"
+				data-charset="iso-8859-15">
+					### Introduction
+					* pastoralism in rangelands
+					quality of quantity of rangeland vegetation shows a high temporal and spatial variability
+					* rangeland management
+					* information is key
+					* existing tools focus on ndvi but green is not green
+					* useful and non-useful trees?
+					
+
+					#### research questions
+					* Can useful vegetation patterns be identified by the spatial position of herders?
+					* Is it possible to recognise useful and non-useful trees on the basis of open remote sensing data?
 					
 				</section>
 				<section>
@@ -143,7 +158,6 @@
 					<section data-markdown>
 						<textarea data-template>
 							#### Material: Study area
-						<!-- where is my pic -->
 							<img src="pics/oct24/study_area.png">
 
 							<figcaption style="font-size: small;">openstreetmap / sentinel2</figcaption>
@@ -153,7 +167,18 @@
 						*openstreetmap / sentinel2*
 					 -->
 					</section>
-					 <section data-markdown 
+					<section data-markdown>
+						<textarea data-template>
+						#### Material: Multispectral satellite data
+
+						<img src="https://www.geosage.com/highview/figures/Sentinel2_Spectral_Bands.jpg" style="height: auto; width: 80%;">
+						
+						<figcaption style="font-size: small;">https://www.geosage.com/highview/features_sentinel2.html</figcaption>
+						<figcaption style="font-size: small;">https://sentiwiki.copernicus.eu/web/s2-mission</figcaption>
+						</textarea>
+					</section>
+
+					<section data-markdown 
 							style="background-image: url('pics/p1.png'); 
 									background-position: top right; 
 									background-size: 15%; 
@@ -178,29 +203,50 @@
 					
 					* Ground samples
 						* collected with OpenSource Application QField
-						<img src="pics/oct24/groundTruth.png" style="height: 30%, width: auto;">
+						<img src="pics/oct24/groundTruth.png" style="height: 30%; width: auto;">
 						* more text
 					
 					</textarea>	
 					</section>
-					<section>
-						Material: GPS data processing
+					<section data-markdown>
+						Methods: Preprocessing
+						S2:
+						* athmospheric correction
+						* calculation vegetation indices
+						GPS:
+						* filter by date & speed
+
+						->reproject to metric SRID
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+						Material: Data processing
+						S2:
+						* Merge images
+						* get vegetation patterns signatures
+						* train RF model to classify
+						GPS:
+						* get NDVI values
+						* Heatmap
 						merge files
 						get geometries and reproject to local SRID
 						heatmap
+						match with temporal satimages
+						calculate ndvi
+						
+						<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e8f5257f485c39659111ddc8b81452984e6278f" style="height: auto; width: 30%;">
+
+						</textarea>
 					</section>
-					<section>
-						Material: Multispectral satellite imageing and processing
-						<br>
-						https://sentiwiki.copernicus.eu/web/s2-mission
-					</section>
-					<section>
+					
+					
+					<section data-markdown>
 						Methods: Identification of pasture (GPS)
 					</section>
-					<section>
+					<section data-markdown>
 						Methods: Identification of useful and non useful trees
 					</section>
-					<section>
+					<section data-markdown>
 						Methods: Classification method comparison
 					</section>
 				</section>
