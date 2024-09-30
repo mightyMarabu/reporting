@@ -132,23 +132,63 @@
 
                     </textarea>
 				</section>
-				<section data-markdown data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n"
-				data-separator-notes="^Note:"
-				data-charset="iso-8859-15">
-					### Introduction
-					* pastoralism in rangelands
-					quality of quantity of rangeland vegetation shows a high temporal and spatial variability
-					* rangeland management
-					* information is key
-					* existing tools focus on ndvi but green is not green
-					* useful and non-useful trees?
-					
+				<section>
+					<section data-markdown data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n"
+					data-separator-notes="^Note:"
+					data-charset="iso-8859-15">
+					<textarea data-template=>
+						### Introduction
+						* ~50% of the worlds terrestrial ecosystems are rangelands
+						* rangelands are used for livestock production
+						* quality of quantity of rangeland vegetation shows a high temporal and spatial variability
+						* information is the key to sustainable rangeland/grazing management
+						* existing tools focus on ndvi but green is not green
+						
 
-					#### research questions
-					* Can useful vegetation patterns be identified by the spatial position of herders?
-					* Is it possible to recognise useful and non-useful trees on the basis of open remote sensing data?
+					</textarea>	
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+						#### Earth observation 
+						
+						Sentinel 2 Multispectral Data
+						
+						<img src="https://sentiwiki.copernicus.eu/__attachments/1687033/image-20230605-102800.png?inst-v=518172b0-8c13-42b0-beb7-3ef9abb337ff" alt="">
+						<figcaption style="font-size: small;">https://sentiwiki.copernicus.eu/</figcaption>
+					</textarea>
+					</section>
+					<section data-markdown>
+						#### Machine & deep learning techniques
+						* RandomForrest for initital classification in dry and wet season
+						* U-Net model trained with classification masks
 					
+					</section>
+					<section data-markdown>
+						#### useful and non-useful trees?
+						Prosopis spp
+						* extremly dought-tolerant
+						* native to american dry zones
+						* introduced to Africa after severe drought in 1970's and 80's 
+						* for woodproduction and restoration of ecosystems
+						* species evolved in a hybrid species adapted to east african environmental conditions and became a superior and agresssive competitor to endemic species
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+						#### Rangeland management
+						the aim is to provide reliable information on the condition of the vegetation / rangelands for pastoralists
+						
+						<img src="pics/pastoralists.png" style="width: 60%; height: auto; opacity: 0.7;">
+						</textarea>
+					</section>
+
+					<section data-markdown>
+					<textarea data-template>
+						#### research questions
+						* Can useful vegetation patterns be identified by the spatial position of herders?
+						* Is it possible to recognise useful and non-useful trees on the basis of open remote sensing data?
+					</textarea>	
+					</section>
 				</section>
 				<section>
 					<section>
@@ -183,79 +223,86 @@
 									background-position: top right; 
 									background-size: 15%; 
 									background-repeat: no-repeat;">
-					<textarea data-template>
-					#### Material: Field data
-					* GPS
-						* collected by herders with Columbus p1
-					
-						<img src="pics/gps_sample.png" style="height: 15%; width: auto;">
-					
-					</textarea>
+						<textarea data-template>
+						#### Material: Field data
+						* GPS
+							* collected by herders with Columbus p1
+						
+							<img src="pics/gps_sample.png" style="height: 15%; width: auto;">
+						
+						</textarea>
 					</section>
 					
-					<section data-markdown 
-							style="background-image: url('pics/qfield.png'), url('pics/q_sync.png'); 
-									background-position: top right, bottom right; 
-									background-size: 15%, 15%; 
+					<section data-markdown style="background-image: url('pics/q_sync.png'); 
+									background-position: top right; 
+									background-size: 15%; 
 									background-repeat: no-repeat;">
-					<textarea data-template>
-					#### Material: Field data
-					
-					* Ground samples
-						* collected with OpenSource Application QField
-						<img src="pics/oct24/groundTruth.png" style="height: 30%; width: auto;">
-						* more text
-					
-					</textarea>	
+						<textarea data-template>
+						#### Material: Field data
+						
+						<img src="pics/oct24/gt_itchy.jpg" style="height: auto; width: 45%;">
+						
+						<img src="pics/oct24/groundTruth.png" style="height: auto; width: 49%;">
+						
+						<figcaption style="font-size: small;">collected ground samples with Qfield</figcaption>
+						
+						</textarea>	
 					</section>
 					<section data-markdown>
 						Methods: Preprocessing
 						S2:
 						* athmospheric correction
 						* calculation vegetation indices
+						
 						GPS:
 						* filter by date & speed
 
 						->reproject to metric SRID
 					</section>
-					<section data-markdown>
+					<!-- <section data-markdown>
 						<textarea data-template>
-						Material: Data processing
-						S2:
-						* Merge images
-						* get vegetation patterns signatures
-						* train RF model to classify
-						GPS:
-						* get NDVI values
-						* Heatmap
+						Material: 
+						
 						merge files
 						get geometries and reproject to local SRID
 						heatmap
 						match with temporal satimages
 						calculate ndvi
 						
-						<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e8f5257f485c39659111ddc8b81452984e6278f" style="height: auto; width: 30%;">
-
+						
 						</textarea>
 					</section>
-					
+					 -->
 					
 					<section data-markdown>
-						Methods: Identification of pasture (GPS)
+						<textarea data-template>
+						
+						#### Methods: Identification of pasture (GPS)
+						* Heatmap
+						* correlate GPS data with classification results
+						</textarea>
 					</section>
 					<section data-markdown>
-						Methods: Identification of useful and non useful trees
+						#### Methods: Identification of useful and non useful trees
+						Data processing	S2:
+						* Merge images
+						* get reflecance signatures from vegetation patterns
+						* calculate fifferent indices (NDVI, GNDVI, SAVI) to enrich dataset 
+						* train RF model to classify
 					</section>
 					<section data-markdown>
 						Methods: Classification method comparison
+						* specific species classes vs classes of areas with main species mixed with other species
+						* Prosopis juriflora vs pure Prosopis with different soil coverages or Prosopis mixed with other species (Ng, Meroni et al 2016)
+
 					</section>
 				</section>
 				<section>
 					<section>
-						Results & Discussion
+						first results & next steps
 					</section>
 					<section>
-						Results
+						first results
 						<br>
 						<p>mean spectral reflectance march 24 vs. july 24</p>
 						<img src="pics/oct24/meanSpectral130324.png" style="width: 45%; height: auto">
@@ -263,7 +310,22 @@
 						
 					</section>
 					<section>
-						Discussion
+						<p>first classification results using RF</p>
+						<img-comparison-slider tabindex="0" class="rendered">
+						<img slot="first" width="65%" src="pics/oct24/ngurunit_rgb.png">
+						<img slot="second" width="65%" src="pics/oct24/ngurunit_class.png">
+						</img-comparison-slider>	
+					</section>
+					<section>
+						<p>identification of grazing patterns</p>
+						<img src="pics/oct24/gpsHeatmap.png" style="width: 75%; height: auto">
+					</section>
+					<section data-markdown="">
+						To Do:
+						* polygonize training data from high resolution images in dry and wet season
+						* classifiy S2 data from dry and wet season
+						* train model with RF masks
+						* correlate GPS data with deep learning results
 					</section>
 				</section>
 
