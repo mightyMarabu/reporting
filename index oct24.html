@@ -25,8 +25,11 @@
 			background-image:url("pics/inforange.png"), url("pics/bmbf.png"), url("pics/uni_kassel_fb11.png"), url("pics/agt.gif"), url("pics/netz_gruen.png");
 			background-size: 12%, 7%, 20%, 10%, 15% 100%;
 			background-repeat: no-repeat;
-			background-position: top right, bottom left 17%, top left 7%, bottom right, left -5%; 
-			padding-left: 5%;
+			background-position: top right, bottom left 17%, top left 7%, bottom right, left -30%;
+			
+			padding-left: 6%;
+			min-height: 80%;
+			border-width: 10 px;
 			
 		}
 
@@ -126,7 +129,7 @@
 					<textarea data-template>
 						On the other side the grass is always <span style="color: green;">greener</span> <br>
 						or<br>
-                        **Earth observation** <span style="color: grey; font-size: smaller;">coupled with</span> **deep learning** <span style="color: grey; font-size: smaller;">techniques to detect **useful and non useful trees** for</span> **rangeland management**
+                        WP 5.2 Remote sensing & GPS-based herd tracking algorithms
 						<br>
 						
 
@@ -142,23 +145,52 @@
 						* ~50% of the worlds terrestrial ecosystems are rangelands
 						* rangelands are used for livestock production
 						* quality of quantity of rangeland vegetation shows a high temporal and spatial variability
-						* information is the key to sustainable rangeland/grazing management
-						* existing tools focus on ndvi but green is not green
-						
-
 					</textarea>	
 					</section>
 					<section data-markdown>
-						<textarea data-template>
-						#### Earth observation 
-						
-						Sentinel 2 Multispectral Data
-						
-						<img src="https://sentiwiki.copernicus.eu/__attachments/1687033/image-20230605-102800.png?inst-v=518172b0-8c13-42b0-beb7-3ef9abb337ff" alt="">
-						<figcaption style="font-size: small;">https://sentiwiki.copernicus.eu/</figcaption>
+					<textarea data-template>
+						#### Rangeland management
+						<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; height: 100%;">
+							<div style="flex: 1; padding-right: 20px;">
+								<p style="font-size: 1em; text-align: left; list-style-position: inside;">
+									the aim is to provide <span style="color: green;">reliable information</span><br> on the<br> <span style="color: green;">condition of the vegetation</span> / rangelands for pastoralists
+								</p>
+							</div>
+							<img src="pics/Lady_herder.jpg" style="width: 60%; height: auto; opacity: 0.7;">
+						</div>
 					</textarea>
 					</section>
 					<section data-markdown>
+					<textarea data-template>
+						#### Remote sensing & rangeland management
+						<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; height: 100%;">
+							<!-- Left column with text -->
+							<div style="flex: 1; padding-right: 20px;">
+								<ul style="font-size: 0.8em; text-align: left; list-style-position: inside;">
+									<li>Information is the key to sustainable rangeland/grazing management.</li>
+									<li>Remote sensing data can provide objective information.</li>
+									<li>Existing tools focus on NDVI, but green is not green.</li>
+								</ul>
+							</div>
+							<!-- Right column with image -->
+							<div style="flex: 1; text-align: center;">
+								<img src="https://www.wlfw.org/wp-content/uploads/2021/02/Precision-Rangelands-Monitoring-App-Graphic-FINAL-081720-scaled-1-900x853.jpg" 
+									style="width: 80%; height: auto;">
+							</div>
+						</div>
+					</textarea>	
+					</section>
+					<section data-markdown>
+					<textarea data-template>
+					#### Earth observation 
+						
+					Sentinel 2 Multispectral Data
+					
+					<img src="https://sentiwiki.copernicus.eu/__attachments/1687033/image-20230605-102800.png?inst-v=518172b0-8c13-42b0-beb7-3ef9abb337ff" alt="">
+					<figcaption style="font-size: small;">https://sentiwiki.copernicus.eu/</figcaption>
+					</textarea>
+				</section>
+				<section data-markdown>
 						#### Machine & deep learning techniques
 						* RandomForrest for initital classification in dry and wet season
 						* U-Net model trained with classification masks
@@ -169,18 +201,28 @@
 						Prosopis spp
 						* extremly dought-tolerant
 						* native to american dry zones
-						* introduced to Africa after severe drought in 1970's and 80's 
-						* for woodproduction and restoration of ecosystems
+						* introduced to Africa in 1970's and 80's for woodproduction and restoration of ecosystems
 						* species evolved in a hybrid species adapted to east african environmental conditions and became a superior and agresssive competitor to endemic species
 					</section>
 					<section data-markdown>
 						<textarea data-template>
-						#### Rangeland management
-						the aim is to provide reliable information on the condition of the vegetation / rangelands for pastoralists
-						
-						<img src="pics/pastoralists.png" style="width: 60%; height: auto; opacity: 0.7;">
+						#### Mathenge / Prosopis Juriflora
+					
+						<img src="pics/oct24/juri1.jpg" style="width: 36%; height:auto;">
+						<img src="pics/oct24/juri2.jpg" style="width: 20%; height:auto;">
+						<img src="pics/oct24/juri3.jpg" style="width: 36%; height:auto;">
 						</textarea>
 					</section>
+					<section data-markdown>
+						<textarea data-template>
+						#### Acacia
+					
+						<img src="pics/oct24/acacia1.jpg" style="width: 36%; height:auto;">
+						<img src="pics/oct24/acacia2.jpg" style="width: 20.4%; height:auto;">
+						<img src="pics/oct24/acacia3.jpg" style="width: 36%; height:auto;">
+						</textarea>
+					</section>
+					
 
 					<section data-markdown>
 					<textarea data-template>
@@ -227,12 +269,12 @@
 						#### Material: Field data
 						* GPS
 							* collected by herders with Columbus p1
-						
+							
 							<img src="pics/gps_sample.png" style="height: 15%; width: auto;">
 						
 						</textarea>
 					</section>
-					
+<!-- 					
 					<section data-markdown style="background-image: url('pics/q_sync.png'); 
 									background-position: top right; 
 									background-size: 15%; 
@@ -240,24 +282,67 @@
 						<textarea data-template>
 						#### Material: Field data
 						
-						<img src="pics/oct24/gt_itchy.jpg" style="height: auto; width: 45%;">
+						<img src="pics/groundTeam.jpg" style="height: auto; width: 30%;">
+						<img src="pics/oct24/grass.jpg" style="height: auto; width: 30%;">
+						<img src="pics/oct24/greenGrass.jpg" style="height: auto; width: 30%;">
+						<img src="pics/oct24/goat.jpg" style="height: auto; width: 45%;">
+						<img src="pics/oct24/trees.jpg" style="height: auto; width: 45%;">
 						
-						<img src="pics/oct24/groundTruth.png" style="height: auto; width: 49%;">
+						</textarea>
+						</section> -->
+						<section data-markdown style="_background-image: url('pics/q_sync.png'); 
+						background-position: top right; 
+						background-size: 15%; 
+						background-repeat: no-repeat;">
+						<textarea data-template>
+						#### <span style="font-size: 18px;"> Material: Field data </span>
+						<img src="pics/oct24/grass.jpg" style="height: auto; width: 43%;">
+						<img src="pics/oct24/greenGrass.jpg" style="height: auto; width: 43%;">
+					</textarea>	
+				</section>
+					
+				<section data-markdown style="background-image: url('pics/q_sync.png'); 
+						background-position: top right; 
+						background-size: 15%; 
+						background-repeat: no-repeat;">
+					<textarea data-template>
+						
+						<img src="pics/oct24/goat.jpg" style="height: auto; width: 43%">
+						<img src="pics/oct24/trees.jpg" style="height: auto; width: 43%;">
+						
+						
+						<figcaption style="font-size: small;">collected ground samples with Qfield</figcaption>
+						
+						</textarea>	
+					</section>
+						
+					<section data-markdown style="background-image: url('pics/q_sync.png'); 
+					background-position: top right; 
+					background-size: 15%; 
+					background-repeat: no-repeat;">
+						<textarea data-template>
+						#### Material: Field data
+						<img src="pics/oct24/gt_itchy.jpg" style="height: auto; width: 30%;">
+
+						<img src="pics/groundTeam.jpg" style="height: auto; width: 30%;">
+						
+						<img src="pics/oct24/groundTruth.png" style="height: auto; width: 33%;">
 						
 						<figcaption style="font-size: small;">collected ground samples with Qfield</figcaption>
 						
 						</textarea>	
 					</section>
 					<section data-markdown>
-						Methods: Preprocessing
-						S2:
+						<textarea data-template>
+						#### Methods: Preprocessing
+						##### S2:
 						* athmospheric correction
 						* calculation vegetation indices
-						
-						GPS:
+						##### GPS:
 						* filter by date & speed
 
 						->reproject to metric SRID
+						</textarea>
 					</section>
 					<!-- <section data-markdown>
 						<textarea data-template>
@@ -291,7 +376,8 @@
 						* train RF model to classify
 					</section>
 					<section data-markdown>
-						Methods: Classification method comparison
+						#### Methods: Classification method comparison
+						* compare different machine learning algorithms like SVM & RF
 						* specific species classes vs classes of areas with main species mixed with other species
 						* Prosopis juriflora vs pure Prosopis with different soil coverages or Prosopis mixed with other species (Ng, Meroni et al 2016)
 
@@ -317,18 +403,34 @@
 						</img-comparison-slider>	
 					</section>
 					<section>
+						<p>first classification results using U-Net</p>
+						<img-comparison-slider tabindex="0" class="rendered">
+						<img slot="first" width="65%" src="pics/oct24/ngurunit_close.png">
+						<img slot="second" width="65%" src="pics/oct24/ngurunit_u_net.png">
+						</img-comparison-slider>	
+					</section>
+					<section>
 						<p>identification of grazing patterns</p>
 						<img src="pics/oct24/gpsHeatmap.png" style="width: 75%; height: auto">
+					</section>
+					<section>
+						<p>correlate GPS data with deep learning results</p>
+						<img-comparison-slider tabindex="0" class="rendered">
+						<img slot="first" width="65%" src="pics/oct24/u_net_gps.png">
+						<img slot="second" width="65%" src="pics/oct24/u_net_heat.png">
+						</img-comparison-slider>	
 					</section>
 					<section data-markdown="">
 						To Do:
 						* polygonize training data from high resolution images in dry and wet season
 						* classifiy S2 data from dry and wet season
-						* train model with RF masks
-						* correlate GPS data with deep learning results
+						
 					</section>
 				</section>
-
+				<section data-markdown>
+					
+					**Earth observation** <span style="color: grey; font-size: smaller;">coupled with</span> **deep learning** <span style="color: grey; font-size: smaller;">techniques to detect **useful and non useful trees** for</span> **rangeland management**
+				</section>
 
 			</div>
 		</div>
@@ -345,7 +447,6 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
