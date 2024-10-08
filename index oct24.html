@@ -115,24 +115,27 @@
 		animation-name: fade;
 		animation-duration: 1.5s;
 		}
+		
+/* 
+		.reveal .progress span {
+			background-color: red !important;
+		} */
 
-		@keyframes fade {
-		from {opacity: .4}
-		to {opacity: 1}
-		}
-	</style>
+	@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+	}
+</style>
+
+
 	<body>
 		<div class="reveal">
 			
 			<div class="slides inforange">
 				<section data-markdown>
 					<textarea data-template>
-						On the other side the grass is always <span style="color: green;">greener</span> <br>
-						or<br>
-                        WP 5.2 Remote sensing & GPS-based herd tracking algorithms
-						<br>
-						
-
+					### Remote sensing & GPS-based herd tracking algorithms to identify grazing patterns and herd movement
+		
                     </textarea>
 				</section>
 				<section>
@@ -176,6 +179,7 @@
 							<div style="flex: 1; text-align: center;">
 								<img src="https://www.wlfw.org/wp-content/uploads/2021/02/Precision-Rangelands-Monitoring-App-Graphic-FINAL-081720-scaled-1-900x853.jpg" 
 									style="width: 80%; height: auto;">
+									<figcaption style="font-size: small;">https://www.wlfw.org/publication-alert-next-gen-remote-sensing-tools-level-up-rangeland-conservation/</figcaption>
 							</div>
 						</div>
 					</textarea>	
@@ -191,10 +195,29 @@
 					</textarea>
 				</section>
 				<section data-markdown>
+					<textarea data-template>
 						#### Machine & deep learning techniques
-						* RandomForrest for initital classification in dry and wet season
-						* U-Net model trained with classification masks
-					
+						<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; height: 100%;">
+							<!-- Left column with text -->
+							<div style="flex: 1; padding-right: 20px;">
+								<ul style="font-size: 0.8em; text-align: left; list-style-position: inside;">
+									<li>RandomForrest for initital classification in dry and wet season</li>
+									<li>U-Net model trained with classification masks</li>
+								</ul>
+							</div>
+							<!-- Right column with image -->
+							<div style="flex: 1; text-align: center;">
+								<img src="https://b2633864.smushcdn.com/2633864/wp-content/uploads/2021/11/unet_small.png?lossy=2&strip=1&webp=1" 
+									style="width: 90%; height: auto;">
+									<figcaption style="font-size: small;">https://pyimagesearch.com/2021/11/08/u-net-training-image-segmentation-models-in-pytorch/</figcaption>
+							</div>
+							<div style="flex: 1; text-align: center;">
+								<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*i0o8mjFfCn-uD79-F1Cqkw.png" 
+									style="width: 90%; height: auto;">
+									<figcaption style="font-size: small;">https://williamkoehrsen.medium.com/random-forest-simple-explanation-377895a60d2d</figcaption>
+							</div>
+						</div>
+					</textarea>
 					</section>
 					<section data-markdown>
 						#### useful and non-useful trees?
@@ -211,6 +234,7 @@
 						<img src="pics/oct24/juri1.jpg" style="width: 36%; height:auto;">
 						<img src="pics/oct24/juri2.jpg" style="width: 20%; height:auto;">
 						<img src="pics/oct24/juri3.jpg" style="width: 36%; height:auto;">
+						<figcaption style="font-size: small;">unlike many acacia species, Mathenge is so dominant that other plants are crowded out</figcaption>
 						</textarea>
 					</section>
 					<section data-markdown>
@@ -220,6 +244,7 @@
 						<img src="pics/oct24/acacia1.jpg" style="width: 36%; height:auto;">
 						<img src="pics/oct24/acacia2.jpg" style="width: 20.4%; height:auto;">
 						<img src="pics/oct24/acacia3.jpg" style="width: 36%; height:auto;">
+						<figcaption style="font-size: small;">useful grasses and shrubs grow in the shade of large acacias / also Prosopis Juriflora</figcaption>
 						</textarea>
 					</section>
 					
@@ -233,8 +258,16 @@
 					</section>
 				</section>
 				<section>
-					<section>
-						Material & Methods
+					<section data-markdown style="background-image: url(pics/sentinel2.png), url(pics/p1.png); background-position: top left, bottom right; background-size: 30%,15%;background-repeat: no-repeat;">
+						<textarea data-template>
+						<span style="color: white;">Material</span>
+						<br><br>
+						<span style="color: white;">Material</span>
+
+						### Material & Methods
+						<br><br>
+						<span style="color: white;">Material</span>
+					</textarea>
 					</section>
 
 					<section data-markdown>
@@ -295,33 +328,31 @@
 						background-size: 15%; 
 						background-repeat: no-repeat;">
 						<textarea data-template>
-						#### <span style="font-size: 18px;"> Material: Field data </span>
+						#### <span style="font-size: 20px;"> Material: Field data </span>
 						<img src="pics/oct24/grass.jpg" style="height: auto; width: 43%;">
 						<img src="pics/oct24/greenGrass.jpg" style="height: auto; width: 43%;">
+						<figcaption style="font-size: small;">Different conditions of grass on different soil types pose a challenge for classification</figcaption>
 					</textarea>	
 				</section>
 					
-				<section data-markdown style="background-image: url('pics/q_sync.png'); 
+				<section data-markdown style="_background-image: url('pics/q_sync.png'); 
 						background-position: top right; 
 						background-size: 15%; 
 						background-repeat: no-repeat;">
 					<textarea data-template>
-						
+						#### <span style="font-size: 20px;"> Material: Field data </span>
 						<img src="pics/oct24/goat.jpg" style="height: auto; width: 43%">
 						<img src="pics/oct24/trees.jpg" style="height: auto; width: 43%;">
-						
-						
-						<figcaption style="font-size: small;">collected ground samples with Qfield</figcaption>
-						
-						</textarea>	
-					</section>
+						<figcaption style="font-size: small;">many acacia species are an important food source for goats and camels; not all are accessible.</figcaption>
+					</textarea>	
+				</section>
 						
 					<section data-markdown style="background-image: url('pics/q_sync.png'); 
 					background-position: top right; 
 					background-size: 15%; 
 					background-repeat: no-repeat;">
 						<textarea data-template>
-						#### Material: Field data
+						#### <span style="font-size: 20px;"> Material: Field data </span>
 						<img src="pics/oct24/gt_itchy.jpg" style="height: auto; width: 30%;">
 
 						<img src="pics/groundTeam.jpg" style="height: auto; width: 30%;">
@@ -332,7 +363,7 @@
 						
 						</textarea>	
 					</section>
-					<section data-markdown>
+					<!-- <section data-markdown>
 						<textarea data-template>
 						#### Methods: Preprocessing
 						##### S2:
@@ -343,6 +374,32 @@
 
 						->reproject to metric SRID
 						</textarea>
+					</section> -->
+					<section data-markdown>
+						<textarea data-template>
+						
+						#### Methods: Identification of pasture (GPS)
+						* Heatmap
+						* correlate GPS data with classification results
+						</textarea>
+					</section>
+					<section data-markdown>
+						#### Methods: Identification of useful and non useful trees
+						Data processing	S2:
+						* Merge images
+						* get reflecance signatures from vegetation patterns
+						* calculate fifferent indices (NDVI, GNDVI, SAVI) to enrich dataset 
+						* train RF model to use as labels
+						* train U-Net model
+					</section>
+					
+					<section data-markdown>
+						<textarea data-template>
+							#### methods: Pipeline
+							<img src="pics/oct24/pipeline.png">
+							<figcaption style="font-size: small;">processing pipeline</figcaption>
+						</textarea>
+
 					</section>
 					<!-- <section data-markdown>
 						<textarea data-template>
@@ -359,22 +416,7 @@
 					</section>
 					 -->
 					
-					<section data-markdown>
-						<textarea data-template>
-						
-						#### Methods: Identification of pasture (GPS)
-						* Heatmap
-						* correlate GPS data with classification results
-						</textarea>
-					</section>
-					<section data-markdown>
-						#### Methods: Identification of useful and non useful trees
-						Data processing	S2:
-						* Merge images
-						* get reflecance signatures from vegetation patterns
-						* calculate fifferent indices (NDVI, GNDVI, SAVI) to enrich dataset 
-						* train RF model to classify
-					</section>
+			
 					<section data-markdown>
 						#### Methods: Classification method comparison
 						* compare different machine learning algorithms like SVM & RF
@@ -384,42 +426,56 @@
 					</section>
 				</section>
 				<section>
-					<section>
-						first results & next steps
+					<section data-markdown>
+						#### first results & next steps
 					</section>
-					<section>
-						first results
+					<section data-markdown>
+						<textarea data-template>
+						##### first results satellite image analysis
 						<br>
-						<p>mean spectral reflectance march 24 vs. july 24</p>
 						<img src="pics/oct24/meanSpectral130324.png" style="width: 45%; height: auto">
 						<img src="pics/oct24/meanSpectral260624.png" style="width: 45%; height: auto">
-						
+						<figcaption style="font-size: small;">mean spectral reflectance march 24 vs. july 24</figcaption>
+					</textarea>
 					</section>
-					<section>
-						<p>first classification results using RF</p>
+					<section data-markdown>
+						<textarea data-template>
+						#### first results satellite image analysis 
 						<img-comparison-slider tabindex="0" class="rendered">
 						<img slot="first" width="65%" src="pics/oct24/ngurunit_rgb.png">
 						<img slot="second" width="65%" src="pics/oct24/ngurunit_class.png">
-						</img-comparison-slider>	
+						</img-comparison-slider>
+						<figcaption style="font-size: small;">classification results using RF</figcaption>
+						</textarea>	
 					</section>
-					<section>
-						<p>first classification results using U-Net</p>
+					<section data-markdown>
+						<textarea data-template>
+						#### first results satellite image analysis
 						<img-comparison-slider tabindex="0" class="rendered">
 						<img slot="first" width="65%" src="pics/oct24/ngurunit_close.png">
 						<img slot="second" width="65%" src="pics/oct24/ngurunit_u_net.png">
-						</img-comparison-slider>	
+						</img-comparison-slider>
+						<figcaption style="font-size: small;">classification results using U-Net</figcaption>
+						</textarea>	
 					</section>
-					<section>
-						<p>identification of grazing patterns</p>
+					<section data-markdown>
+						<textarea data-template>
+						#### first results gps data analysis
 						<img src="pics/oct24/gpsHeatmap.png" style="width: 75%; height: auto">
+						<figcaption style="font-size: small;">identification of grazing patterns</figcaption>
+						</textarea>
 					</section>
-					<section>
-						<p>correlate GPS data with deep learning results</p>
+					<section data-markdown>
+						<textarea data-template>
+						#### first results
 						<img-comparison-slider tabindex="0" class="rendered">
 						<img slot="first" width="65%" src="pics/oct24/u_net_gps.png">
-						<img slot="second" width="65%" src="pics/oct24/u_net_heat.png">
-						</img-comparison-slider>	
+						<img slot="second" width="65%" src="pics/oct24/u_net_heat.png"> 
+						</img-comparison-slider>
+						<figcaption style="font-size: small;">correlate GPS data with deep learning results</figcaption>
+						</textarea>	
 					</section>
+					
 					<section data-markdown="">
 						To Do:
 						* polygonize training data from high resolution images in dry and wet season
